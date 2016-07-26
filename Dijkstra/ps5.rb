@@ -2,7 +2,7 @@
 # algorithm.
 #
 # The file contains an adjacency list representation of an
-# undirected  weighted graph with 200 vertices labeled 1 to 200. Each
+# undirected weighted graph with 200 vertices labeled 1 to 200. Each
 # row consists  of the node tuples that are adjacent to that particular
 # vertex along with the length of that edge. For example, the 6th row
 # has 6 as the first entry indicating that this row corresponds to the
@@ -58,7 +58,7 @@ end
 
 if $PROGRAM_NAME == __FILE__
 
-  lines = File.readlines("dijkstraData.txt")
+  lines = File.readlines("test1.txt")
   split_lines = lines.map do |line|
     split_space = line.split
   end
@@ -75,11 +75,12 @@ if $PROGRAM_NAME == __FILE__
     end
   end
 
-  arr = [7,37,59,82,99,115,133,165,188,197]
-  shortest_path_distances = dijkstra_shortest_path(graph)
-  res = []
-  arr.each do |i|
-    res << shortest_path_distances[i]
-  end
-  p res
+  # arr = [7,37,59,82,99,115,133,165,188,197]
+  # shortest_path_distances = dijkstra_shortest_path(graph)
+  # res = []
+  # arr.each do |i|
+  #   res << shortest_path_distances[i]
+  # end
+  # p res
+  puts dijkstra_shortest_path(graph)
 end

@@ -21,7 +21,7 @@ def cluster(sorted_edges, leaders, num_of_clusters, k)
 end
 
 if $PROGRAM_NAME == __FILE__
-  lines = File.readlines("test1.txt")
+  lines = File.readlines("clustering1.txt")
   num_of_clusters = lines[0].to_i
   edges = []
   lines[1..-1].each do |line|

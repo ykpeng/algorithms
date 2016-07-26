@@ -19,7 +19,7 @@
 # smallest cut that you ever find.)
 
 graph = {}
-lines = File.readlines("/Users/yi-ke-peng/Documents/MOOCS/AlgorithmsI/40MinCut.txt")
+lines = File.readlines("/Users/yi-ke-peng/Documents/MOOCS/AlgorithmsI/kargerMinCut.txt")
 split_int_lines = lines.map do |line|
   line.split.map { |char| char.to_i }
 end

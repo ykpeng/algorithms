@@ -82,7 +82,7 @@ def scc(original_graph, graph_rev, tracker, tracker2)
 end
 
 if $PROGRAM_NAME == __FILE__
-  lines = File.readlines("test1.txt")
+  lines = File.readlines("SCC.txt")
   split_int_lines = lines.map do |line|
     line.split.map { |char| char.to_i }
   end
@@ -116,5 +116,6 @@ if $PROGRAM_NAME == __FILE__
     frequencies[v] += 1
   end
 
+  p tracker2.leaders
   p frequencies.values.sort.reverse[0, 5]
 end

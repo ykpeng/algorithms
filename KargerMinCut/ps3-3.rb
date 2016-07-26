@@ -20,7 +20,7 @@
 include Math
 
 nodes = {}
-lines = File.readlines("/Users/yi-ke-peng/Documents/MOOCS/AlgorithmsI/kargerMinCut.txt")
+lines = File.readlines("kargerMinCut.txt")
 split_int_lines = lines.map do |line|
   line.split.map { |char| char.to_i }
 end

@@ -34,7 +34,7 @@ def total_cost(tree)
 end
 
 if $PROGRAM_NAME == __FILE__
-  lines = File.readlines("edges.txt")
+  lines = File.readlines("test1.txt")
   number_of_nodes = lines[0].split[0].to_i
   number_of_edges = lines[0].split[1].to_i
   graph = {}
@@ -53,5 +53,6 @@ if $PROGRAM_NAME == __FILE__
   end
   start = rand(number_of_nodes + 1)
   min_spanning_tree = primsMST(graph, start)
-  total_cost(min_spanning_tree)
+  p min_spanning_tree
+  # total_cost(min_spanning_tree)
 end
